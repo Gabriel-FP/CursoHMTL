@@ -35,50 +35,57 @@
       background: #DDD;
       font-style: italic;
     }
+
+    #table-div {
+      max-width: 100%;
+      overflow-x: auto;
+    }
   </style>
 </head>
 
 <body>
   <p>Lorem ipsum dolor sit.</p>
 
-  <table>
-    <caption>Descrição da tabela.</caption>
-    <thead>
-      <tr>
-        <th>Título 1</th>
-        <th>Título 2</th>
-        <th>Título 3</th>
-      </tr>
-    </thead>
+  <div id="table-div">
+    <table>
+      <caption>Descrição da tabela.</caption>
+      <thead>
+        <tr>
+          <th>Título 1</th>
+          <th>Título 2</th>
+          <th>Título 3</th>
+        </tr>
+      </thead>
 
-    <tbody>
-      <tr>
-        <td>Corpo 1</td>
-        <td>Corpo 2</td>
-        <td>Corpo 3</td>
-      </tr>
-      <tr>
-        <td>Corpo 1</td>
-        <td>Corpo 2</td>
-        <td>Corpo 3</td>
-      </tr>
-      <tr>
-        <td>Corpo 1</td>
-        <td>Corpo 2</td>
-        <td>Corpo 3</td>
-      </tr>
-    </tbody>
+      <tbody>
+        <tr>
+          <td>Corpo 1</td>
+          <td>Corpo 2</td>
+          <td>Corpo 3</td>
+        </tr>
+        <tr>
+          <td>Corpo 1</td>
+          <td>Corpo 2</td>
+          <td>Corpo 3</td>
+        </tr>
+        <tr>
+          <td>Corpo 1</td>
+          <td>Corpo 2</td>
+          <td>Corpo 3</td>
+        </tr>
+      </tbody>
 
-    <tfoot>
-      <tr>
-        <td colspan="2" rowspan="2">Footer estilizado</td>
-        <td>Total</td>
-      </tr>
-      <tr>
-        <td>Valor R$</td>
-      </tr>
-    </tfoot>
-  </table>
+      <tfoot>
+        <tr>
+          <td colspan="2" rowspan="2">Footer estilizado</td>
+          <td>Total</td>
+        </tr>
+        <tr>
+          <td>R$ 3000</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
 </body>
 
 </html>
