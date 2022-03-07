@@ -6,13 +6,64 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form Page</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    label {
+      cursor: pointer;
+    }
+
+    .radio-form input {
+      float: left;
+    }
+  </style>
 </head>
 
 <body>
   <section>
     <form action="#" method="get" target="_blank" autocomplete="off">
+      <p>Meu formulário</p>
       <p>
-        <input type="text" id="name" name="name" placeholder="Seu nome completo" />
+        <label for="name">Seu nome</label>
+        <input type="text" id="name" placeholder="Donatello.." required />
+      </p>
+      <p>
+        <label for="developer">Sou desenvolvedor(a)</label>
+        <input type="checkbox" id="developer" />
+      </p>
+      <p class="radio-form">
+        Gênero:<br>
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="masculino" name="sex" /><br>
+        <label for="feminino">Feminino</label>
+        <input type="radio" id="feminino" name="sex" /><br>
+        <label for="nao-binario">Não binário</label>
+        <input type="radio" id="nao-binario" name="sex" /><br>
+        <label for="nao-responder">Prefiro não responder</label>
+        <input type="radio" id="nao-responder" name="sex" />
+      </p>
+      <p>
+        <label for="birthday">Data de nascimento:</label>
+        <input id="birthday" name="birthday" type="date" required />
+      </p>
+      <p>
+        <label for="fav-color">Cor preferida</label>
+        <input id="fav-color" name="fav-color" type="color">
+      </p>
+      <p>
+        <label for="profile-photo">Sua foto</label>
+        <input id="profile-photo" name="profile-photo" type="file" accept="image/*" required />
+      </p>
+      <p>
+        <label for="mobile">Telefone:</label>
+        <input id="mobile" name="mobile" type="number" placeholder="(85) 999185242" />
+      </p>
+      <p>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
       </p>
     </form>
   </section>
