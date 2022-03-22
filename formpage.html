@@ -28,7 +28,7 @@
       <p>Meu formulário</p>
       <p>
         <label for="name">Seu nome</label>
-        <input type="text" id="name" placeholder="Donatello.." required />
+        <input type="text" id="name" placeholder="Donatello.." />
       </p>
       <p>
         <label for="developer">Sou desenvolvedor(a)</label>
@@ -47,7 +47,7 @@
       </p>
       <p>
         <label for="birthday">Data de nascimento:</label>
-        <input id="birthday" name="birthday" type="date" required />
+        <input id="birthday" name="birthday" type="date" />
       </p>
       <p>
         <label for="fav-color">Cor preferida</label>
@@ -55,11 +55,36 @@
       </p>
       <p>
         <label for="profile-photo">Sua foto</label>
-        <input id="profile-photo" name="profile-photo" type="file" accept="image/*" required />
+        <input id="profile-photo" name="profile-photo" type="file" accept="image/*" />
       </p>
       <p>
         <label for="mobile">Telefone:</label>
         <input id="mobile" name="mobile" type="number" placeholder="(85) 999185242" />
+      </p>
+      <p>
+        <label for="password">Palavra Secreta</label>
+        <input id="password" name="password" type="password" />
+      </p>
+      <p>
+        <label for="boredom">Nível de tédio</label>
+        <input id="boredom" name="boredom" type="range" min="0" max="2" required />
+      </p>
+      <p>
+        <label for="detailed-boredom">Nível de tédio <sub>(Detalhado)</sub></label>
+        <input id="detailed-boredom" name="detailed-boredom" type="range" list="tickmarks" step="10" />
+        <datalist id="tickmarks">
+          <option value="0"></option>
+          <option value="10"></option>
+          <option value="20"></option>
+          <option value="30"></option>
+          <option value="40"></option>
+          <option value="50"></option>
+          <option value="60"></option>
+          <option value="70"></option>
+          <option value="80"></option>
+          <option value="90"></option>
+          <option value="100"></option>
+        </datalist>
       </p>
       <p>
         <button type="reset">Limpar</button>
